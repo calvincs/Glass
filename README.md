@@ -31,7 +31,7 @@ The glass applications components diagram shows the relationship between the int
 
 The database is a general reference to [Cockroachdb](https://www.cockroachlabs.com/) 🪳, which is included in the application as the primary replicated data storage system for the synchronized cache, system, and shared API tables. This however MIGHT change if the database does not meet our needs.
 
-The tiny virtual machine controller, or the TVMC, is a module in Glass that pulls and synchronizes code from Github to the application and then spins up an API instance based on the said codebase.  The TVMC utilizes the [Firecracker](https://firecracker-microvm.github.io/)Firecracker 🧨 project to isolate code execution and management of micro VMs. 
+The tiny virtual machine controller, or the TVMC, is a module in Glass that pulls and synchronizes code from Github to the application and then spins up an API instance based on the said codebase.  The TVMC utilizes the [Firecracker](https://firecracker-microvm.github.io/) 🧨 project to isolate code execution and management of micro VMs. 
 
 The deployed APIs use the standard gRPC protocol to communicate with the Queue Processor to synchronize executing requests in the queue from clients.
 
